@@ -29,7 +29,7 @@ public class Buch {
     public void print() {
         System.out.println("Buch:" +
                 "\n    title='" + title + '\'' +
-                "\n    author='" + author + '\'' +
+                "\n    Author='" + author + '\'' +
                 "\n    isbn='" + isbn + '\'' +
                 "\n    pages=" + pages);
     }
