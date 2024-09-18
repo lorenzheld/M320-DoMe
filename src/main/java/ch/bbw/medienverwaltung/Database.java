@@ -1,47 +1,22 @@
 package ch.bbw.medienverwaltung;
 
-import java.awt.print.Book;
 import java.util.ArrayList;
 
 public class Database {
-	
-	// TODO: Diese Klasse ist wirklich schlecht programmiert
-	
-	private ArrayList<CD> cds;
-	private ArrayList<Video> videos;
-	private ArrayList<Buch> books;
+
+	private ArrayList<Medium> medien;
 
 	public Database() {
-		cds = new ArrayList<>();
-		videos = new ArrayList<>();
-		books  = new ArrayList<Buch>();
+		medien = new ArrayList<>();
 	}
 
-	public void addCD(CD cd) {
-		cds.add(cd);
+	public void addItem(Medium medium) {
+		medien.add(medium);
 	}
 
-	public void addVideo(Video video) {
-		videos.add(video);
-	}
-
-	public void addBook(Buch book) { books.add(book); }
-	
 	public void printList() {
-		
-		// print list of CDs
-		for (CD cd : cds) {
-			cd.print();
+		for (Medium medium : medien) {
+			medium.print();
 		}
-
-		// print list of videos
-		for (Video video : videos) {
-			video.print();
-		}
-
-		for (Buch book : books) {
-			book.print();
-		}
-
 	}
 }

@@ -1,36 +1,19 @@
- package ch.bbw.medienverwaltung;
+package ch.bbw.medienverwaltung;
 
-import java.awt.print.Book;
-
-public class Buch {
-
-    private String title;
+public class Buch extends Medium {
     private String author;
     private String isbn;
     private int pages;
 
-
     public Buch(String title, String author, String isbn, int pages) {
-        this.title = title;
+        super(title);
         this.author = author;
         this.isbn = isbn;
         this.pages = pages;
     }
 
     @Override
-    public String toString() {
-        return "Buch:" +
-                "\n    title='" + title + '\'' +
-                "\n    author='" + author + '\'' +
-                "\n    isbn='" + isbn + '\'' +
-                "\n    pages=" + pages;
-    }
-
     public void print() {
-        System.out.println("Buch:" +
-                "\n    title='" + title + '\'' +
-                "\n    Author='" + author + '\'' +
-                "\n    isbn='" + isbn + '\'' +
-                "\n    pages=" + pages);
+        System.out.println("Book: " + getTitle() + " by " + author + " (ISBN: " + isbn + ", " + pages + " pages)");
     }
 }
