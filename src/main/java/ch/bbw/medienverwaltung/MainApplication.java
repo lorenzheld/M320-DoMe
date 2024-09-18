@@ -14,7 +14,8 @@ public class MainApplication {
 		Database db = new Database();
 
 		// hier ein paar Videos und CD's einfügen
-		// ...
+		//
+
 		CD cd1 = new CD("Norah Jones", "Fall", 13, 68);
 		CD cd2 = new CD("Ramones", "Greatest Hits", 20, 90);
 		CD cd3 = new CD("Neil Young", "Hitchhiker", 20, 90);
@@ -30,8 +31,9 @@ public class MainApplication {
 		db.addItem(v2);
 		db.addItem(bh1);
 		//db.addBook(book);
-		
+
 		db.printList();
+		
 
 		System.out.println(bh1);
 	}
